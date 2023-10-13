@@ -12,7 +12,7 @@ export default async function NestDetail({ params }) {
   const arr = params.slug.split("-");
   const answer = answerDatas.answers.find((ans) => ans.AnswerId == arr[0]);
   return (
-    <section className=" py-5">
+    <section className=" py-5 min-h-[85vh]">
       <div className="container mx-auto">
         <Button>
           <Link href={"/"}>Back</Link>
